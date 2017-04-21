@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content:space-around;
     padding: 10px;
     width: 100%;
     height: auto;
@@ -159,7 +159,7 @@
 }
 
 .contenedor-noticias {
-    width: 50%;
+    width: 43%;
 }
 
 .texto-bienvenida {
@@ -570,6 +570,7 @@ img .elemento-img {
     .navbar-default {
         display: none;
     }
+
 }
 
 
@@ -594,9 +595,14 @@ img .elemento-img {
         height: auto;
     }
     .contenedor-noticias {
-        width: auto;
+        width: 65%;
         margin-bottom: 7px;
         margin-top: 7px;
+    }
+
+    .carousel-inner > .item > img {
+        height: auto;
+        width: 100%;
     }
     .texto-bienvenida {
         width: auto;
@@ -614,6 +620,8 @@ img .elemento-img {
     .contenedor-hazte-socio {
       flex-direction: column;
     }
+
+
 }
 
 
@@ -666,6 +674,15 @@ img .elemento-img {
     	    border-width:5px;
         border-style:outset;
     }
+    .carousel-inner > .item > img {
+        height: 200px;
+        height: auto;
+    }
+        .contenedor-noticias {
+        width: 95%;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
 
 }
 
@@ -675,8 +692,32 @@ img .elemento-img {
 	display: -ms-flexbox;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content:space-around;
+	justify-content:flex-end;
 	align-items: center;
-
+    margin-bottom: 30px;
  }
+.redes-sociales-margen{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+.ss {
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	background: rgba(255,255,255,0.80);
+}
+.contenedor-contacto{
+    min-height: 20px;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+ }

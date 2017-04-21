@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section class="contenedor-home">
+                <div class="contenedor-noticias">
+                    <!--Carrusel bootstrap -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active"> <img src="{% static 'elompages/images/home/Imagen-ojos.jpg' %}" with="300px" height="350px">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                            <div class="item"> <img src="{% static 'elompages/images/home/noticias/noticia-2.png'%}">
+                                <div class="carousel-caption">
+                                    <h4 class="ss"><a href="#">Entrevista al Director Fundación ELOM</a></h4>
+                                    <a class="label label-primary" href="http://www.mercurioantofagasta.cl/impresa/2016/11/22/full/cuerpo-principal/2/" target="_blank">VER MÁS</a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+                            <div class="item"> <img src="{% static 'elompages/images/home/noticias/noticia-3.jpg'%}">
+                                <div class="carousel-caption">
+                                    <h4 class="ss"><a href="#">Más de dos mil personas asistieron a las charlas “D-Mentes”</a></h4>
+                                    <a class="label label-primary" href="http://fiis.org/noticia_antofagasta/mas-dos-mil-personas-asistieron-las-charlas-d-mentes/" target="_blank">VER MÁS</a>
+                                </div>
+                            </div>
+                            <!-- End Item -->
+
+                        </div>
+                        <!-- End Carousel Inner -->
+
+                        <!-- Controls -->
+                        <div class="carousel-controls">
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="texto-bienvenida">
+                    <!--Parráfo-->
+                    <h4 class="texto-5">En los Ojos de mi Madre”, le da la bienvenida a nuestra página web, en la que esperamos brindarle toda la información acerca de la codependencia y los efectos que produce en madres con hijos drogodependientes, entregando datos y reseñas de forma simple y clara, así como también se entregara información de nuestras actividades.</h4>
+                </div>
+                <div class="contenedor-varios">
+                    <!--img + text contenido-educativo-->
+                    <div class="contenedor-contenido-educat"> <img class="margen-img" src="{% static 'elompages/images/home/libro.jpg'%}" width="109" height="98">
+                        <h4 class="texto-2">CONTENIDO<br>EDUCATIVO</h4>
+                    </div>
+                    <!--img + text Acticidades-->
+                    <div class="contenedor-contenido-educat"> <img class="margen-img" src="{% static 'elompages/images/home/calendario.jpg'%}" width="109" height="100">
+                        <h4 class="texto-2">ACTIVIDADES</h4>
+                    </div>
+                    <!--Acceso-destacado-->
+                    <div class="acceso-destacado">
+                        <h4 class="texto-1">ACCESO DESTACADO</h4>
+                    </div>
+                    <div class="">
+
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}

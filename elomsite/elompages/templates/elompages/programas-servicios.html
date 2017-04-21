@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base/base.html" %}
+
+{% block content %}
+      <div class="jumbotron">
+        <div class="container">
+          <h2 class="Titulo-1">PROGRAMAS Y SERVICIOS</h2>
+          <p class="texto-5 text-justify">Los servicios entregados serán dirigidos por profesionales, enfocados en otorgar aplicaciones de vida para la mejora en la calidad de vida con el objetivo de influir en la sociedad y en la vida de las personas entregando una orientación y apoyo en temáticas de codependencia y prevención de drogas.</p>
+        </div>
+      </div>
+      <div class="container contenedor-progr-serv " id="features">
+        <div class="jumbotron col-md-5 feature programas"> <i class="ionicons ion-person-stalker"></i>
+          <h3 class="Titulo-1">PROGRAMA ESTACIONAL ELOM</h3>
+          <div class="title_border"></div>
+          <p class="texto-5 text-justify">Está enfocado en el tratamiento de la codependencia en madres con hijos drogodependientes abordando la temática a través de una metodología innovadora, simple y directa que consta en estaciones mensuales dirigidas a trabajar en los distintos síntomas de la codependencia con el fin de lograr una mejor calidad de vida y restauración de identidad de las madres usuarias.</p>
+        </div>
+        <div class=" jumbotron col-md-5 feature programas"><i class="fa fa-street-view"></i>
+          <h3 class="Titulo-1">PROGRAMA LA NUEVA USANZA</h3>
+          <div class="title_border"></div>
+          <p class="texto-5 text-justify">Está enfocado en brindar una orientación a madres, padres o adulto significativo mediante actividades dirigidas otorgando información determinante para la prevención de un posible consumo de drogas en sus hijos. Entregando aplicaciones de vida y necesarias para el manejo de conductas adictivas que se presentan en el consumo de sustancias.</p>
+        </div>
+      </div>
+{% endblock %}

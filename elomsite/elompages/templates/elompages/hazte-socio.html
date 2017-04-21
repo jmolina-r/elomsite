@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2 class="Titulo-1">HAZTE SOCIO</h2>
+                <p class="texto-5 text-justify">Ser socio de la Fundación En los Ojos de mi madre significa adquirir un compromiso personal y social con el fin de ayudar a la comunidad en temáticas de codependencia y prevención de drogas. Los socios que quieran ser parte de la fundación
+                    se derivan en 3 categorías:</p>
+            </div>
+        </div>
+        <div class="contenedor-hazte-socio">
+            <div class="div-img col-md-4">
+              <img class="img" src="{% static 'elompages/images/hazte-socio/usuario.png' %}" title="Foto10" alt="Foto10">
+                <div class="text">USUARIO</div>
+                <div class="jumbotron">
+                    <p class="texto-5 text-justify">Aquellas personas que deseen obtener contenidos de la fundación deberán realizar un formulario de orientación.</p>
+                    <p class="texto-5 text-justify">Beneficio: Recibirá información y orientación online.</p>
+                    <p><a class="texto-5" href="https://docs.google.com/forms/d/1UQF23_3eMf2zuV7dl1TQPOi40OdxLUz9iPT57CAqcII/edit?invite=CJnz9-4M&ts=5898966a">Accede al Formulario de Orientación</a></p>
+                </div>
+            </div>
+            <div class="div-img col-md-4"> <img class="img" src="{% static 'elompages/images/hazte-socio/suscriptor.png'%}" title="Foto10" alt="Foto10">
+                <div class="text">SUSCRIPTOR</div>
+                <div class="jumbotron">
+                    <p class="texto-5 text-justify">Aquella persona que desee ser socio de la fundación realizando un aporte mínimo de $ 2.000 mil pesos mensuales. </p>
+                    <p class="texto-5 text-justify">Beneficio: Tendrá derecho a recibir un contenido de información avanzado y orientación online.</p>
+                </div>
+            </div>
+            <div class="div-img col-md-4"> <img class="img" src="{% static 'elompages/images/hazte-socio/membresia.png'%}" title="Foto10" alt="Foto10">
+                <div class="text">MEMBRESÍA</div>
+                <div class="jumbotron">
+                    <p class="texto-5 text-justify">Los aportes del socio se transforman en una subvención para aquellas madres que no pueden acceder de forma directa a la información de la página, además nos permitirá seguir entregando aplicaciones de vida aquellas madres que realmente
+                        necesiten ayuda y orientación.</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h2 class="Titulo-1">¿POR QUÉ HACERME SOCIO?</h2>
+                <p class="texto-5 text-justify">Ser socio de la Fundación En los Ojos de mi madre significa adquirir un compromiso personal y social con el fin de ayudar a la comunidad en temáticas de codependencia y prevención de drogas. Los socios que quieran ser parte de la fundación
+                    se derivan en 3 categorías:</p>
+            </div>
+        </div>
+        <div class="jumbotron contenedor-donaciones"> <img class=" img-donacion" src="{% static 'elompages/images/hazte-socio/donacion.png'%}" alt="ALT NAME" />
+            <div class="caption">
+                <h3 class="Titulo-1">Nº de cuenta para donaciones: </h3>
+                <p class="texto-5"><strong>Nuestra cuenta es</strong> : 2572142704 <br>
+                    <strong>Banco</strong> :Banco Estado <br>
+                    <strong>Tipo de cuenta</strong> : Chequera electrónica / Cuenta Vista <br>
+                    <strong>Rut Fundación</strong> : 65.122.811-5 <br>
+                    <strong>E-mail</strong> : enlosojosdemimadre@gmail.com</p>
+            </div>
+        </div>
+
+{% endblock %}

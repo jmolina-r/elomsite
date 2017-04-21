@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title%}En Los Ojos de Mi Madre{% endblock %}</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!--fuente Principal-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!--fuente nav-bar-principal-->
+    <script src="{% static 'elompages/js/fuente.js' %}"></script>
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'elompages/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'elompages/css/Estilos-v2.css' %}">
+
+</head>
+
+<body>
+  <div class="container">
+
+      {% block navbar %}
+      <header></header>
+
+      <!--Barra de navegación Principal + logo elom-->
+      <nav class="nav-bar-principal">
+          <!--imagen-->
+          <div class="logo"><a href="{% url 'elompages:home' %}"><img src="{% static 'elompages/images/base/ELOM%20fondo%20transparente.png'%}" width="270" height="175"></a></div>
+          <!--barra-->
+
+          <div class="contenedor-bar">
+              <div class="redes-sociales">
+                   <a href="https://www.facebook.com/EnLosOjosDeMiMadre/" class="redes-sociales-margen"><img src="{% static 'elompages/images/base/redes-sociales/facebook.png'%}" width="40" height="40"></a>
+                  <a href="tel:+56944883673" class="redes-sociales-margen"><img src="{% static 'elompages/images/base/redes-sociales/whatsapp.png'%}" width="40" height="40"></a>
+              </div>
+              <div class="borde-superior"></div>
+
+              <div class="contenedor-secciones-bar">
+                  <a href="{% url 'elompages:home' %}" class="texto-bar-nav">INICO</a>
+                  <div class="barra">&nbsp</div>
+                  <a href="{% url 'elompages:quienes_somos' %}" class="texto-bar-nav">QUIENES SOMOS</a>
+                  <div class="barra">&nbsp</div>
+                  <a href="{% url 'elompages:programas_servicios' %}" class="texto-bar-nav">PROGRAMAS Y SERVICIOS</a>
+                  <div class="barra">&nbsp</div>
+                  <a href="{% url 'elompages:hazte_socio' %}" class="texto-bar-nav">HAZTE SOCIO</a>
+                  <div class="barra">&nbsp</div>
+                  <a href="{% url 'elompages:contacto' %}" class="texto-bar-nav">CONTACTO</a>
+              </div>
+          </div>
+      </nav>
+      <div class="borde-inferior"></div>
+
+
+      <!--Nav-bar secundaria-->
+      <nav class="navbar navbar-default color-nav">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  <a class="navbar-brand texto-bar-nav-secundaria" href="{% url 'elompages:home' %}"><strong>En Los Ojos de Mi Madre</strong></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav texto-bar-nav-secundaria ">
+                      <li><a href="{% url 'elompages:home' %}">Inicio <span class="sr-only">(current)</span></a></li>
+                      <li><a href="{% url 'elompages:quienes_somos' %}">Quienes Somos</a></li>
+                      <li><a href="{% url 'elompages:programas_servicios' %}">Programas y Servicios</a></li>
+                      <li><a href="{% url 'elompages:hazte_socio' %}">Hazte Socio</a></li>
+                      <li><a href="{% url 'elompages:contacto' %}">Contacto</a></li>
+
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+      {% endblock %}
+
+    <!--contenido-->
+    <main class="margen">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    </div>
+
+
+    <!--Sección Colaboradores-->
+    <aside class="contenedor-colaboradores">
+        <h3 class="texto-4">COLABORADORES</h3>
+        <img class="elemento-img" src="{% static 'elompages/images/base/Logos%20Comite%20regional_Antofagasta%201.jpg'%}" width="80" height="80">
+        <img class="elemento-img" src="{% static 'elompages/images/base/MDECHILE.png' %}" width="55" height="80">
+        <img class="elemento-img" src="{% static 'elompages/images/base/Plan%20CEPA.png' %}" width="100" height="85">
+        <img class="elemento-img img-thumbnail" src="{% static 'elompages/images/base/Logo_innovachile%20(1).png' %}" width="150" height="46">
+        <img class="elemento-img img-thumbnail" src="{% static 'elompages/images/base/FME_logo_grande.png' %}" width="160" height="30">
+    </aside>
+
+    {% block footer %}
+    <!--Sección Footer-->
+    <footer class="contenedor-footer">
+        <div class="mapa-sitio">
+            <a href="{% url 'elompages:home' %}" class="texto-mapa-sitio">Inicio  |</a>
+            <a href="{% url 'elompages:quienes_somos' %}" class="texto-mapa-sitio">Quienes Somos  |</a>
+            <a href="{% url 'elompages:programas_servicios' %}" class="texto-mapa-sitio">Programas y Servivios   |</a>
+            <a href="{% url 'elompages:hazte_socio' %}" class="texto-mapa-sitio">Hazte Socio   |</a>
+            <!--<a class="texto-mapa-sitio">Amigos Elom  |</a>-->
+            <a href="{% url 'elompages:contacto' %}" class="texto-mapa-sitio">Contacto  |</a>
+            <br><br>
+        </div>
+        <addres class="contacto">
+            <p class="texto-contacto">Oficina: Teniente Luis Uribe #865, Antofagasta, Chile<br> Fono: 56 55 321 6691  | Whatsapp: +56 9 4488 3673 <br> Correo electrónico: contacto@elom.cl</p>
+        </addres>
+    </footer>
+    {% endblock %}
+
+
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script src="{% static 'elompages/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'elompages/js/jquery-1.11.3.min.js' %}"></script>
+    <script src="{% static 'elompages/js/myjs.js'%}"></script>
+
+
+</body>
+</html>

@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base/base.html' %}
+{% load bootstrap %}
+
+
+{% block content %}
+<fieldset class="container">
+    <legend ><h1 class="Titulo-1">Ponte en contacto con nosotros!</h1></legend>
+    <form class="contenedor-contacto form-horizontal" method="POST" action="" novalidate="novalidate">
+        {% csrf_token %}
+        {{ form | bootstrap }}
+        <!--<input type="submit" value="Submit" class="btn btn-success pull-right">-->
+
+              <!-- Success message -->
+      <div class="alert alert-success" role="alert" id="success_message">Éxito <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por escribirnos, nos pondremos en contacto con usted en breve.</div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-2">
+          <button type="submit" value="Submit" class="btn btn-success pull-right" >Enviar <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </form>
+</fieldset>
+
+{% endblock %}

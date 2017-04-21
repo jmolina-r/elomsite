@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base/base.html" %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+        <h2 class="Titulo-1">Quiénes Somos</h2>
+        <hr>
+        <p class="texto-5 text-justify">La Fundación En los ojos de mi madre, es una institución sin fines de lucro, que aborda la problemática social de la adicción al consumo de drogas, dirigido desde la comunidad y para la comunidad con un enfoque innovador e disruptivo, donde nuestro objetivo es mitigar y tratar la codependencia en madres que tengan hijos drogodependientes, así como también abordar la prevención de drogas. Nuestra propuesta de valor se basa en conjugar la teoría relacionada a esta temática a un vocablo simple y directo en función de nuestra Oficina Social de Orientación Familiar para la Prevención de Drogas y los diversos Programas de servicio para la comunidad.</p>
+
+        <!-- MODAL VIDEO -->
+        <div class="bs-example center-block">
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">
+          <snap class="glyphicon glyphicon-play"></snap>
+          Ver Video</a>
+
+          <!-- Modal HTML -->
+          <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe id="cartoonVideo" width="560" height="315" src="//www.youtube.com/embed/zhuCjWPoVnE" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL -->
+
+      </div>
+      <div class="jumbotron">
+        <h2 class=Titulo-1>MISIÓN</h2>
+        <hr>
+        <p class="texto-5 text-justify">Brindar apoyo y orientación a la problemática social de la adicción al consumo de drogas, ofreciendo servicios profesionales de alta calidad para mitigar y tratar la codependencia en madres con hijos drogodependientes, así como también enfocarnos en la prevención de drogas mediante un modelo simple y directo.</p>
+      </div>
+      <div class="jumbotron">
+        <h2 class="Titulo-1">VISIÓN</h2>
+        <hr>
+        <p class="texto-5 text-justify">Como Fundación “En los ojos de mi Madre” queremos ser una institución líder a nivel nacional en el tratamiento de la codependencia y prevención de drogas, entregando un servicio con los mayores estándares de calidad y satisfacción para nuestros usuarios, realizando mejoras día a día para lograr una calidad de vida satisfactoria y saludable para el beneficiario y su familiar..</p>
+      </div>
+
+{% endblock %}
